@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post a Job - JobPortal</title>
+</head>
+<body>
+    <h1>JobPortal</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="jobs.html">Jobs</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a> |
+        <a href="post-job.html">Post Job</a>
+    </nav>
+    
+    <h2>Post a New Job</h2>
+    <p>Find the right candidates for your company</p>
+    
+    <form action="job-posted-success.html" method="post">
+        <h3>Job Information</h3>
+        <p><strong>Job Title:</strong> <input type="text" name="job_title" required></p>
+        <p><strong>Company Name:</strong> <input type="text" name="company_name" required></p>
+        <p><strong>Job Location:</strong> <input type="text" name="location" required></p>
+        
+        <p><strong>Employment Type:</strong>
+        <select name="employment_type" required>
+            <option value="">Select Type</option>
+            <option value="full-time">Full Time</option>
+            <option value="part-time">Part Time</option>
+            <option value="contract">Contract</option>
+            <option value="internship">Internship</option>
+        </select></p>
+        
+        <p><strong>Experience Required:</strong>
+        <select name="experience" required>
+            <option value="">Select Experience</option>
+            <option value="fresher">Fresher</option>
+            <option value="0-1">0-1 years</option>
+            <option value="2-4">2-4 years</option>
+            <option value="5-8">5-8 years</option>
+            <option value="9-15">9-15 years</option>
+            <option value="15+">15+ years</option>
+        </select></p>
+        
+        <p><strong>Salary Range (Lakhs per annum):</strong>
+        From: <input type="number" name="salary_min" min="0" step="0.1">
+        To: <input type="number" name="salary_max" min="0" step="0.1"></p>
+        
+        <h3>Job Description</h3>
+        <p><strong>Job Summary:</strong><br>
+        <textarea name="job_summary" rows="4" cols="60" required placeholder="Brief overview of the role..."></textarea></p>
+        
+        <p><strong>Key Responsibilities:</strong><br>
+        <textarea name="responsibilities" rows="6" cols="60" required placeholder="List the main responsibilities..."></textarea></p>
+        
+        <p><strong>Required Skills:</strong><br>
+        <textarea name="required_skills" rows="4" cols="60" required placeholder="List required skills and technologies..."></textarea></p>
+        
+        <p><strong>Qualifications:</strong><br>
+        <textarea name="qualifications" rows="4" cols="60" required placeholder="Educational and experience requirements..."></textarea></p>
+        
+        <h3>Company Information</h3>
+        <p><strong>Company Description:</strong><br>
+        <textarea name="company_description" rows="4" cols="60" placeholder="Tell candidates about your company..."></textarea></p>
+        
+        <p><strong>Company Website:</strong> <input type="url" name="company_website" placeholder="https://"></p>
+        
+        <h3>Contact Information</h3>
+        <p><strong>HR Contact Name:</strong> <input type="text" name="hr_name" required></p>
+        <p><strong>HR Email:</strong> <input type="email" name="hr_email" required></p>
+        <p><strong>HR Phone:</strong> <input type="tel" name="hr_phone"></p>
+        
+        <h3>Application Settings</h3>
+        <p><strong>Application Deadline:</strong> <input type="date" name="deadline"></p>
+        <p><input type="checkbox" name="email_applications"> Receive applications via email</p>
+        <p><input type="checkbox" name="featured_job"> Make this a featured job (+₹500)</p>
+        
+        <p><button type="submit">Post Job</button></p>
+    </form>
+    
+    <h3>Pricing</h3>
+    <ul>
+        <li>Standard Job Posting: Free for 30 days</li>
+        <li>Featured Job Posting: ₹500 for 30 days (appears at top)</li>
+        <li>Premium Job Posting: ₹1000 for 45 days (featured + highlighted)</li>
+    </ul>
+    
+    <footer>
+        <p>&copy; 2024 JobPortal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

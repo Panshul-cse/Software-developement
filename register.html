@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - JobPortal</title>
+</head>
+<body>
+    <h1>JobPortal</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="jobs.html">Jobs</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a> |
+        <a href="post-job.html">Post Job</a>
+    </nav>
+    
+    <h2>Create Your Account</h2>
+    <p>Join thousands of job seekers and find your dream job</p>
+    
+    <form action="registration-success.html" method="post">
+        <h3>Personal Information</h3>
+        <p><strong>Full Name:</strong> <input type="text" name="fullname" required></p>
+        <p><strong>Email:</strong> <input type="email" name="email" required></p>
+        <p><strong>Phone:</strong> <input type="tel" name="phone" required></p>
+        <p><strong>Password:</strong> <input type="password" name="password" required></p>
+        <p><strong>Confirm Password:</strong> <input type="password" name="confirm_password" required></p>
+        
+        <h3>Professional Information</h3>
+        <p><strong>Current Location:</strong> <input type="text" name="location" required></p>
+        <p><strong>Total Experience:</strong>
+        <select name="experience" required>
+            <option value="">Select Experience</option>
+            <option value="fresher">Fresher</option>
+            <option value="0-1">0-1 years</option>
+            <option value="2-4">2-4 years</option>
+            <option value="5-8">5-8 years</option>
+            <option value="9-15">9-15 years</option>
+            <option value="15+">15+ years</option>
+        </select></p>
+        
+        <p><strong>Current Salary (Lakhs per annum):</strong> <input type="number" name="current_salary" min="0"></p>
+        
+        <p><strong>Highest Qualification:</strong>
+        <select name="qualification" required>
+            <option value="">Select Qualification</option>
+            <option value="12th">12th Pass</option>
+            <option value="diploma">Diploma</option>
+            <option value="graduate">Graduate</option>
+            <option value="postgraduate">Post Graduate</option>
+            <option value="phd">PhD</option>
+        </select></p>
+        
+        <p><strong>Key Skills:</strong><br>
+        <textarea name="skills" rows="3" cols="50" placeholder="e.g., Java, Python, Marketing, Sales..."></textarea></p>
+        
+        <p><strong>Upload Resume:</strong> <input type="file" name="resume" accept=".pdf,.doc,.docx"></p>
+        
+        <h3>Job Preferences</h3>
+        <p><strong>Preferred Job Locations:</strong><br>
+        <textarea name="preferred_locations" rows="2" cols="50" placeholder="e.g., Mumbai, Delhi, Bangalore..."></textarea></p>
+        
+        <p><strong>Expected Salary (Lakhs per annum):</strong> <input type="number" name="expected_salary" min="0"></p>
+        
+        <p><input type="checkbox" name="terms" required> I agree to the <a href="#">Terms and Conditions</a></p>
+        <p><input type="checkbox" name="newsletter"> Send me job alerts and updates via email</p>
+        
+        <p><button type="submit">Create Account</button></p>
+    </form>
+    
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+    
+    <footer>
+        <p>&copy; 2024 JobPortal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
