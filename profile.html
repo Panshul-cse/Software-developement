@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile - JobPortal</title>
+    <link rel="stylesheet" href="npc.css">
+</head>
+<body>
+    <h1>JobPortal</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="jobs.html">Jobs</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="profile.html">My Profile</a> |
+        <a href="post-job.html">Post Job</a>
+    </nav>
+
+    <main>
+        <h2>My Profile</h2>
+
+        <div class="card">
+            <h3>Personal Information</h3>
+            <form>
+                <label><strong>Full Name:</strong></label>
+                <input type="text" placeholder="Enter your full name" required>
+
+                <label><strong>Email:</strong></label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label><strong>Phone:</strong></label>
+                <input type="text" placeholder="Enter your phone number" required>
+
+                <label><strong>Location:</strong></label>
+                <input type="text" placeholder="Enter your city" required>
+
+                <button type="submit">Update Personal Info</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Professional Information</h3>
+            <form>
+                <label><strong>Current Job Title:</strong></label>
+                <input type="text" placeholder="e.g., Software Developer" required>
+
+                <label><strong>Current Company:</strong></label>
+                <input type="text" placeholder="Enter your company name" required>
+
+                <label><strong>Years of Experience:</strong></label>
+                <input type="number" min="0" max="60" placeholder="Enter years" required>
+
+                <label><strong>Skills:</strong></label>
+                <textarea rows="4" placeholder="Enter your skills (comma separated)"></textarea>
+
+                <label><strong>Bio:</strong></label>
+                <textarea rows="4" placeholder="Tell us about yourself"></textarea>
+
+                <button type="submit">Update Professional Info</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Resume</h3>
+            <p>Upload or update your resume</p>
+            <form>
+                <label><strong>Select Resume File:</strong></label>
+                <input type="file" accept=".pdf,.doc,.docx" required>
+                <button type="submit">Upload Resume</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Account Settings</h3>
+            <p><a href="#">Change Password</a></p>
+            <p><a href="#">Privacy Settings</a></p>
+            <p><a href="#">Notifications Preferences</a></p>
+            <p><a href="index.html">Logout</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JobPortal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
