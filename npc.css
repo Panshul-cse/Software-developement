@@ -198,6 +198,37 @@ footer {
     display: inline-block;
 }
 
+/* styles for saved‑jobs/cart page */
+.cart-body {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #55DDE0;
+    color: white;
+}
+
+.cart-body .cart-job{
+    border: 3px solid hsl(206, 46%, 17%);
+    border-radius: 15px;
+    padding: 15px;
+    background-color: hsl(206, 46%, 37%);
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+    min-width: 300px;
+}
+.cart-body .cart-job  h2{
+    margin-bottom: -15px;
+}
+.cart-body .post{
+    padding: 15px;
+    background-color: #2F4858;
+    margin-bottom: 10px;
+}
+.cart-body #job{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 .btn-primary:hover {
     background-color: #42a5f5;
 }

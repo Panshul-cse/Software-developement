@@ -9,6 +9,7 @@
     <nav>
         <a href="index.html">Home</a> |
         <a href="jobs.html">Jobs</a> |
+        <a href="cart.html">Saved Jobs (<span id="cart-count">0</span>)</a> |
         <a href="register.html">Register</a> |
         <a href="login.html">Login</a> |
         <a href="post-job.html">Post Job</a>
@@ -55,6 +56,7 @@
     <p><strong>TechCorp</strong> is a leading technology company specializing in software solutions for enterprises. We offer competitive salaries, flexible work environment, and excellent growth opportunities.</p>
     
     <h4>Apply for this Job</h4>
+    <button class="btn-primary add-cart" data-id="1" data-title="Software Developer" data-company="TechCorp" data-location="Mumbai">Save Job</button>
     <form action="application-success.html" method="post">
         <p><strong>Name:</strong> <input type="text" name="name" required></p>
         <p><strong>Email:</strong> <input type="email" name="email" required></p>
@@ -73,5 +75,6 @@
     <footer>
         <p>&copy; 2024 JobPortal. All rights reserved.</p>
     </footer>
+    <script src="cart.js"></script>
 </body>
 </html>
